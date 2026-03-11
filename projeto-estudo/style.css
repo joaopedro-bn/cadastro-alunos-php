@@ -1,0 +1,26 @@
+* {
+    font-family: "Montserrat";
+}
+
+.btn1:hover {
+    background-color: rgb(52, 184, 0);
+
+}
+
+.btn1 {
+    background-color: rgb(39, 138, 0);
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn2:hover {
+    background-color: rgb(0, 89, 206);
+
+}
+
+.btn2 {
+    background-color: rgb(0, 62, 143);
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+
+}
