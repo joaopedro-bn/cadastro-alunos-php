@@ -31,6 +31,12 @@
                         </div>
                     </div>
 
+                    
+                        <div class="d-grid gap-3">
+                            <a href="index.php" class="btn btn3"> Voltar para o início </a>
+                        </div>
+                    
+
                 </form>
             </div>
         </div>

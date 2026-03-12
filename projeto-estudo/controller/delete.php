@@ -1,5 +1,7 @@
 <?php 
 
-DELETE FROM `cadastroalunos` WHERE `cadastroalunos`.`id` = 1
+    require "config.php";
+
+    
 
 ?>
