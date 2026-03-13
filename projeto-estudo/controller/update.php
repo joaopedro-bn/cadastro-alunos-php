@@ -1,5 +1,5 @@
 <?php
-require_once "user.php";
+require_once "../model/user.php";
 require "config.php";
 
 if (isset($_POST["btn-update"])) {
@@ -29,7 +29,8 @@ if (isset($_POST["btn-update"])) {
     if (($_POST["btn-age"]) > 150 || ($_POST["btn-age"]) < 1) {
         echo "<div class='alert alert-danger'>Insira uma idade válida!</div>";
     } else {
-        echo "<div class='alert alert-success'>Cadastro atualizado com sucesso!</div>";
+        header("Location: ../view/lista.php?success=cadastrado");
+        exit;
     }
 }
 ?>

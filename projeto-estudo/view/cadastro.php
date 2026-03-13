@@ -7,7 +7,7 @@
 
                 <form action="cadastro.php" class="form-group" method="POST">
 
-                    <div class="border border-1 shadow-sm p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="border border-1 shadow-sm p-4 mb-2 bg-body-tertiary rounded">
 
                         <div class="mb-3">
                         <label for="text" class="form-label"><b>Nome:</b></label>
@@ -33,6 +33,7 @@
 
                     
                         <div class="d-grid gap-3">
+                            <a href="lista.php" class="btn btn-primary btn2"> Ver alunos cadastrados </a>
                             <a href="index.php" class="btn btn3"> Voltar para o início </a>
                         </div>
                     
