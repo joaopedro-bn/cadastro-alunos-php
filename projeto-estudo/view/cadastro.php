@@ -20,7 +20,7 @@
                         </div>
 
                         <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label"><b>Idade:</b></label>
+                        <label for="idade" class="form-label"><b>Idade:</b></label>
                         <input type="number" class="form-control" id="" name="btn-age" placeholder="Digite a idade do aluno...">
                         </div>
 
@@ -36,7 +36,6 @@
                             <a href="index.php" class="btn btn3"> Voltar para o início </a>
                         </div>
                     
-
                 </form>
             </div>
         </div>

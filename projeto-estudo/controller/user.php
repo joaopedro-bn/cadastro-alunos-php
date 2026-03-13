@@ -3,9 +3,11 @@
 declare(strict_types=1);
 
 class User {
+
     private string $name;
     private string $email;
     private int $age;
+    private int $id;
 
     public function getName() {
         return $this->name;
@@ -31,6 +33,15 @@ class User {
 
     public function setAge(int $age) {
         $this->age = $age;
+        return $this;
+    }
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
         return $this;
     }
 }

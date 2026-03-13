@@ -1,6 +1,7 @@
 <?php include "header.php"; ?>
 <?php include "../controller/buscar-aluno.php"; ?>
 <?php include "../controller/delete.php"; ?>
+<?php include "../controller/update.php"; ?>
 
 <div class="container mt-5">
   <div class="row justify-content-center">
@@ -24,6 +25,13 @@
               <td><?php echo $aluno["idade"] ?></td>
               <td><?php echo $aluno["email"] ?></td>
               <td>
+                  <a href="editar-cadastro.php?id=<?= $aluno["id"] ?>" class="btn btn-outline-dark btn-sm">
+                  Editar cadastro
+                  </a>
+                </td>
+              </td>
+            
+              <td>
                 <form action="lista.php" method="POST">
 
                 <input type="hidden" value="<?php echo $aluno["id"] ?>" name="id">
@@ -31,9 +39,8 @@
                 <button type="submit" class="btn btn-danger btn-sm" name="btn-delete" method="post">
                 Deletar
                 </button>
-
+                
                 </form>
-              </td>
             </tr>
 
           <?php endforeach; ?>

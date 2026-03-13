@@ -10,8 +10,11 @@ if (isset($_POST["btn-submit"])) {
     }
 }
 
-if (isset($_POST["btn-submit"])) {
+if (isset($_POST["btn-submit"])) {    
 
+if (($_POST["btn-age"]) > 150 || ($_POST["btn-age"]) < 1) {
+    echo "<div class='alert alert-danger'>Insira uma idade válida!</div>";
+} elseif (isset($_POST["btn-submit"])) {
     $novoAluno = new User();
 
     $novoAluno->setName($_POST["btn-name"]);
@@ -27,4 +30,5 @@ if (isset($_POST["btn-submit"])) {
     ]);
 
     echo "<div class='alert alert-success'> Aluno cadastrado com sucesso: <strong>" . $novoAluno->getName() . "</div>";
+    }
 }
